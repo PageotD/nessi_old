@@ -1,0 +1,24 @@
+package:
+        name: nessi
+        version: 0.3.0
+
+source:
+        path: .
+
+build:
+        script: python setup.py install
+
+requirements:
+        build:
+                - python
+                - cython
+                - numpy 
+        run:
+                - python
+                - numpy
+                - scipy
+                - matplotlib
+
+test:
+        imports:
+                - nessi

@@ -1,0 +1,23 @@
+# MANIFEST.in is a file required for correctly packaging NeSSI.
+# It allows to include, in the distributed package:
+# - README.md
+# - LICENSE
+# - CHANGELOG.md
+# - cython source files (*.pyx)
+
+# Include read me
+include README.md
+
+# Include license file
+include LICENSE
+
+# Include changelog
+include CHANGELOG.md
+
+# Include requirements
+include requirements.txt
+
+# Include cython files, test folders and
+# associated data if exist
+global-include *.pyx
+global-include test_*.py
